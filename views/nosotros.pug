@@ -1,0 +1,38 @@
+//- En pug no se necesita cerrar la etiqueta
+//- h1 Hola
+
+//- ESPERA UNA VARIABLE
+//- p= viajes
+
+//- EXTENDER DEL LAYOUR PRINCIPAL
+extends ./layout/index
+
+
+//-ASIGNAR EL BLOQUE AL QUE SERA AGREGADO
+block contenido 
+    main.container.mt-5 
+        .row 
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="imagen-nosotros", class="img-fluid")
+
+            .col-md-7 
+                h1= pagina 
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper ipsum ac venenatis elementum. Maecenas non ultricies magna, eu pharetra ipsum. Nam dapibus et turpis id aliquam. Fusce consectetur facilisis lorem sed hendrerit. Nullam dignissim lobortis porttitor. Aenean ex augue, tincidunt eu dolor id, iaculis semper turpis. Aliquam a magna at urna pellentesque semper et ut felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis cursus enim at vehicula. Mauris ornare leo at ligula tempus, in ultricies est porttitor. Donec vulputate rutrum nisl, vel ultricies diam feugiat a. Cras eu molestie risus. Morbi vel leo at nulla scelerisque posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis, nisi in consectetur viverra, ex nisl consequat sapien, ut finibus lorem arcu eu sem.
+
+                p Duis sodales nulla ac nisi dapibus, sed rhoncus massa ornare. Phasellus fringilla lacus quis metus convallis consectetur. Phasellus et dignissim sem. Nullam ornare eros consectetur dapibus mattis. Pellentesque commodo massa a nisl euismod, ac elementum enim euismod. Nunc ullamcorper, felis vel facilisis vulputate, ex sem scelerisque dui, sollicitudin tempus neque neque placerat justo. Cras sed nulla non nulla.
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4 
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, et accusantium laborum placeat autem dicta quas vitae consequatur eaque tempora!
+                .col-md-4 
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, et accusantium laborum placeat autem dicta quas vitae consequatur eaque tempora!
+                .col-md-4 
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Precios 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, et accusantium laborum placeat autem dicta quas vitae consequatur eaque tempora!
